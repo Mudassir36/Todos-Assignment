@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Body Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+/* Main Container */
+body > div {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Input Field */
+#inp {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #f1f5f9;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#inp:focus {
+    background-color: #e0eafc;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Add Button */
+button {
+    padding: 14px 36px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4f93ff, #3b7ed0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(79, 147, 255, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3b7ed0, #4f93ff);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(79, 147, 255, 0.5);
+}
+
+/* Todos Container */
+#todos {
+    margin-top: 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Todo Item */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Todo Text */
+.todo-item span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Delete Button */
+.todo-item button {
+    padding: 6px 15px;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-item button:hover {
+    background: linear-gradient(135deg, #ff4757, #ff6b6b);
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+}
